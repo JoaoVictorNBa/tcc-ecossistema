@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo sustentável - Cuide da sua natureza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo" id="logo-home">
+            <img src="img/logo-tcc.png" alt="Mundo Sustentável" class="logo-img">
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Conheça seu mundo</span>
+            <h1 class="hero-title">Cuide da sua natureza e do seu clima</h1>
+            <p class="hero-desc">
+                O Mundo Sustentável é um site criado para informar sobre os diferentes tipos de lixo, incentivar o descarte correto e conscientizar sobre a importância da preservação ambiental. A plataforma também explica temas como terra orgânica, reciclagem e chorume, ajudando as pessoas a entenderem melhor o impacto dos resíduos no planeta e como pequenas ações podem contribuir para um futuro mais sustentável.
+            </p>
+            <button class="btn btn-primary" id="explore-now-btn">
+                <i data-lucide="compass"></i> Explorar Agora
+            </button>
+        </div>
+    </header>
+
+    <main id="content-area">
+        <!-- Genêros -->
+        <section class="genre-bar" id="genre-bar">
+            <button class="genre-pill active">Informações pessoas</button>
+            <button class="genre-pill">aa</button>
+        </section>
+
+        <!-- GRID CONTENT -->
+        <section class="main-content">
+            <h2 class="section-title" id="section-header">Sobre o criador</h2>
+            <div class="media-grid" id="media-grid">
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">
+                <i data-lucide=🌎></i>
+                <span>Mundo saudável</span>
+            </a>
+            <div class="footer-links">
+                <a href="https://github.com/JoaoVictorNBa" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/joao-victor-bagatim" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/bagatimjoao" target="_blank">Instagram</a>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Mundo saudável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-video-container" id="modal-video">
+                <!-- Iframe do YouTube será inserido aqui -->
+            </div>
+            <div class="modal-details">
+                <h3 class="modal-title" id="modal-title">Título do Item</h3>
+                <div class="modal-meta-info">
+                    <div id="modal-age-rating" class="age-rating"></div>
+                    <div id="modal-info-grid"></div>
+                </div>
+                <p class="modal-desc" id="modal-desc">Descrição do item...</p>
+                <div id="modal-tags-container" class="modal-section"></div>
+                <div id="modal-screenshots-section" class="modal-section">
+                    <h4>Screenshots</h4>
+                    <div id="modal-screenshots-container"></div>
+                </div>
+                <div id="modal-actions" class="modal-actions"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>   
