@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo sustentável - Cuide da sua natureza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo" id="logo-home">
+            <img src="img/logo-tcc.png" alt="Mundo Sustentável" class="logo-img">
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Conheça seu mundo</span>
+            <h1 class="hero-title">Cuide da sua natureza e do seu clima</h1>
+            <p class="hero-desc">
+                O Mundo Sustentável é um site criado para informar sobre os diferentes tipos de lixo, incentivar o descarte correto e conscientizar sobre a importância da preservação ambiental. A plataforma também explica temas como terra orgânica, reciclagem e chorume, ajudando as pessoas a entenderem melhor o impacto dos resíduos no planeta e como pequenas ações podem contribuir para um futuro mais sustentável.
+            </p>
+            <button class="btn btn-primary" id="explore-now-btn">
+                <i data-lucide="compass"></i> Explorar Agora
+            </button>
+        </div>
+    </header>
+
+    <main id="content-area">
+
+        <!-- Abas de navegação - Botões -->
+        <section class="genre-bar" id="genre-bar">
+            <button class="genre-pill active" onclick="trocarAba('informacoes')">Informações do site</button>
+            <button class="genre-pill " onclick="trocarAba('residuos')">Tipos de resíduos</button>
+            <button class="genre-pill " onclick="trocarAba('criador')">Sobre o criador</button>
+
+        </section>
+
+        <!-- CONTEÚDO DAS ABAS - Painéis -->
+        <section class="main-content">
+
+            <!-- ABA: Informações do site--> 
+            <div id="aba-informacoes" class="aba-conteudo visivel">
+                <h2 class="section-title">Se conscientize pelo seu mundo</h2>
+                <div class="media-grid" id="media-grid"></div>
+                <h2 class="section-topic">Sobre o projeto</h2>
+                <p class="section-desc">
+                    O Mundo Sustentável é um projeto desenvolvido com o objetivo de conscientizar a população sobre a separação correta dos resíduos, reciclagem, compostagem e os impactos ambientais causados pelo descarte inadequado do lixo, ele busca resolver problemas como a falta de informação e mostra como realmente é o mundo.
+                </p>
+                <p class="section-desc">
+                    O projeto Mundo Sustentável foi desenvolvido por um aluno do curso técnico em Desenvolvimento de Sistemas como parte do Trabalho de Conclusão de Curso (TCC). A iniciativa surgiu da necessidade de promover a conscientização ambiental por meio da tecnologia, oferecendo informações sobre reciclagem, compostagem, descarte correto de resíduos e preservação do meio ambiente.
+                </p>
+                <h2 class="section-topic">Objetivo do projeto</h2>
+                <p class="section-desc">
+                    <ul class="section-li">
+                        <li>Promover educação ambiental</li>
+                        <li>Incentivar a reciclagem</li>
+                        <li>Explicar o destino correto dos lixos</li>
+                        <li>Conscientizar sobre a preservação do meio ambiente</li>
+                    </ul>
+                </p>
+                <h2 class="section-topic">Tópicos</h2>
+                <p class="section-desc">
+                    <ul class="section-li">
+                        <li>Tipos de resíduos</li>
+                        <li>Impactos ambientais</li>
+                        <li>Compostagem e Chorume</li>
+                        <li>Dados interessantes</li>
+                    </ul>
+                </p>
+                <h2 class="section-topic">Contato</h2>
+                <p class="section-desc">
+                    Nome: João Victor Nunes Bagatim
+                </p>
+                <a href="https://wa.me/15996424970" class="btnc" targe="_blank">Quero entrar em contato</a>
+            </div>
+
+            <!-- ABA: Tipos de resíduos -->
+            <div id="aba-residuos" class="aba-conteudo">
+            <h2 class="section-title">Tipos de Resíduos</h2>
+            <p class="section-desc" style="margin-bottom: 32px;">
+                Para facilitar a separação correta, cada tipo de material possui uma cor e categoria específica.
+Conheça as principais categorias e saiba o que descartar em cada uma delas.
+            </p>
+ 
+            <div class="residuos-grid">
+ 
+                <div class="residuo-card" style="--residuo-cor: #4bbe15;">
+                    <div class="residuo-icon-wrap" style="background: rgba(75,190,21,0.12); border-color: #4bbe15;">
+                        <span class="residuo-emoji">🟢</span>
+                    </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #4bbe15;">Vidro</h3>
+                    <p class="residuo-desc">Garrafas, potes, copos e frascos de vidro. Deve ser descartado inteiro quando possível para evitar acidentes.</p>
+                    <ul class="residuo-lista">
+                        <li>Garrafas e potes</li>
+                        <li>Frascos de perfume</li>
+                        <li>Vidros de conserva</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(75,190,21,0.15); color: #4bbe15; border-color: #4bbe15;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #3b82f6;">
+                <div class="residuo-icon-wrap" style="background: rgba(59,130,246,0.12); border-color: #3b82f6;">
+                    <span class="residuo-emoji">🔵</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #3b82f6;">Papel</h3>
+                    <p class="residuo-desc">Jornais, revistas, caixas, papelão e folhas. Devem estar secos e limpos para serem reciclados corretamente.</p>
+                    <ul class="residuo-lista">
+                        <li>Jornais e revistas</li>
+                        <li>Caixas e papelão</li>
+                        <li>Folhas e cadernos</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(59,130,246,0.15); color: #3b82f6; border-color: #3b82f6;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #f59e0b;">
+                <div class="residuo-icon-wrap" style="background: rgba(245,158,11,0.12); border-color: #f59e0b;">
+                    <span class="residuo-emoji">🟡</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #f59e0b;">Metal</h3>
+                    <p class="residuo-desc">Latas de alumínio, aço, tampas e embalagens metálicas. Um dos materiais mais valiosos para a reciclagem.</p>
+                    <ul class="residuo-lista">
+                        <li>Latas de alumínio</li>
+                        <li>Latas de aço</li>
+                        <li>Tampas e pregos</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(245,158,11,0.15); color: #f59e0b; border-color: #f59e0b;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #ef4444;">
+                <div class="residuo-icon-wrap" style="background: rgba(239,68,68,0.12); border-color: #ef4444;">
+                    <span class="residuo-emoji">🔴</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #ef4444;">Plástico</h3>
+                    <p class="residuo-desc">Embalagens, garrafas PET, sacolas e utensílios plásticos. Verifique o símbolo de reciclagem na embalagem.</p>
+                    <ul class="residuo-lista">
+                        <li>Garrafas PET</li>
+                        <li>Embalagens de alimentos</li>
+                        <li>Sacolas plásticas</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(239,68,68,0.15); color: #ef4444; border-color: #ef4444;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #8b5cf6;">
+                <div class="residuo-icon-wrap" style="background: rgba(139,92,246,0.12); border-color: #8b5cf6;">
+                    <span class="residuo-emoji">☠️</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #8b5cf6;">Resíduo Perigoso</h3>
+                    <p class="residuo-desc">Pilhas, baterias, medicamentos, tintas e produtos químicos. Nunca descarte no lixo comum — procure pontos de coleta especiais.</p>
+                    <ul class="residuo-lista">
+                        <li>Pilhas e baterias</li>
+                        <li>Medicamentos vencidos</li>
+                        <li>Tintas e solventes</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(139,92,246,0.15); color: #8b5cf6; border-color: #8b5cf6;">⚠️ Descarte especial</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #a16207;">
+                <div class="residuo-icon-wrap" style="background: rgba(161,98,7,0.12); border-color: #a16207;">
+                    <span class="residuo-emoji">🍂</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #a16207;">Orgânico</h3>
+                    <p class="residuo-desc">Restos de comida, cascas de frutas e legumes, borra de café e resíduos de jardim. Podem ser transformados em adubo por compostagem.</p>
+                    <ul class="residuo-lista">
+                        <li>Cascas e restos de frutas</li>
+                        <li>Borra de café e chá</li>
+                        <li>Resíduos de jardim</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(161,98,7,0.15); color: #a16207; border-color: #a16207;">🌱 Compostável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #64748b;">
+                <div class="residuo-icon-wrap" style="background: rgba(100,116,139,0.12); border-color: #64748b;">
+                    <span class="residuo-emoji">🗑️</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #64748b;">Rejeito</h3>
+                    <p class="residuo-desc">Materiais que não podem ser reciclados nem compostados, como papel sujo, fraldas e isopor. Devem ir para o lixo comum.</p>
+                    <ul class="residuo-lista">
+                        <li>Papel higiênico usado</li>
+                        <li>Fraldas descartáveis</li>
+                        <li>Isopor e espumas</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(100,116,139,0.15); color: #64748b; border-color: #64748b;">🗑️ Lixo comum</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #06b6d4;">
+                <div class="residuo-icon-wrap" style="background: rgba(6,182,212,0.12); border-color: #06b6d4;">
+                    <span class="residuo-emoji">💻</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #06b6d4;">Eletrônico (e-lixo)</h3>
+                    <p class="residuo-desc">Celulares, computadores, eletrodomésticos e cabos. Contêm metais pesados e devem ser entregues em pontos de coleta específicos.</p>
+                    <ul class="residuo-lista">
+                        <li>Celulares e computadores</li>
+                        <li>Cabos e carregadores</li>
+                        <li>Eletrodomésticos</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(6,182,212,0.15); color: #06b6d4; border-color: #06b6d4;">♻️ Ponto de coleta</span>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+ 
+
+            <!-- ABA: Sobre o criador -->
+            <div id="aba-criador" class="aba-conteudo">
+                <h2 class="section-title">Sobre o criador</h2>
+                <div class="criador-card">
+                    <div class="criador-avatar"><img src="img/criador.jpeg"></div>
+                    <div class="criador-info">
+                        <h3>João Victor Nunes Bagatim</h3>
+                        <p class="criador-subtitulo">Desenvolvedor Front-end · TCC 2026</p>
+                        <p class="criador-desc">
+                            Este projeto foi desenvolvido como Trabalho de Conclusão de Curso com o objetivo de conscientizar sobre sustentabilidade, descarte correto de lixo e preservação ambiental. O site reúne informações sobre reciclagem, terra orgânica, chorume e muito mais.
+                        </p>
+                        <div class="criador-links">
+                            <a href="https://github.com/JoaoVictorNBa" target="_blank" class="btn btn-secondary">
+                                <i data-lucide="github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/joao-victor-bagatim" target="_blank" class="btn btn-secondary">
+                                <i data-lucide="linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/bagatimjoao" target="_blank" class="btn btn-secondary">
+                                <i data-lucide="instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">
+                <i data-lucide=🌎></i>
+                <span>Mundo saudável</span>
+            </a>
+            <div class="footer-links">
+                <a href="https://github.com/JoaoVictorNBa" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/joao-victor-bagatim" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/bagatimjoao" target="_blank">Instagram</a>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Mundo saudável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
