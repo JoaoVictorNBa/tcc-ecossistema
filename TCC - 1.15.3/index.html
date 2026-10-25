@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo sustentável - Cuide da sua natureza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo" id="logo-home">
+            <img src="img/logo-tcc.png" alt="Mundo Sustentável" class="logo-img">
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Conheça seu mundo</span>
+            <h1 class="hero-title">Cuide da sua natureza e do seu clima</h1>
+            <p class="hero-desc">
+                O Mundo Sustentável é um site criado para informar sobre os diferentes tipos de lixo, incentivar o descarte correto e conscientizar sobre a importância da preservação ambiental. A plataforma também explica temas como terra orgânica, reciclagem e chorume, ajudando as pessoas a entenderem melhor o impacto dos resíduos no planeta e como pequenas ações podem contribuir para um futuro mais sustentável.
+            </p>
+            <button class="btn btn-primary" id="explore-now-btn">
+                <i data-lucide="compass"></i> Explorar Agora
+            </button>
+        </div>
+    </header>
+
+    <main id="content-area">
+
+        <!-- Abas de navegação - Botões -->
+        <section class="genre-bar" id="genre-bar">
+            <button class="genre-pill active" onclick="trocarAba('informacoes')">Informações do site</button>
+            <button class="genre-pill " onclick="trocarAba('residuos')">Tipos de resíduos</button>
+            <button class="genre-pill " onclick="trocarAba('impactos')">Impactos ambientais</button>
+            <button class="genre-pill " onclick="trocarAba('composto')">Compostagem e Chorume</button>
+            <button class="genre-pill " onclick="trocarAba('dados')">Dados interessantes</button>
+            <button class="genre-pill " onclick="trocarAba('criador')">Sobre o criador</button>
+
+        </section>
+
+        <!-- CONTEÚDO DAS ABAS - Painéis -->
+        <section class="main-content">
+
+            <!-- ABA: Informações do site--> 
+            <div id="aba-informacoes" class="aba-conteudo visivel">
+                <h2 class="section-title">Se conscientize pelo seu mundo</h2>
+
+                <!-- Destaques rápidos -->
+                <div class="home-stats">
+                    <div class="home-stat-card">
+                        <div class="home-stat-icon"><i data-lucide="recycle"></i></div>
+                        <div>
+                            <div class="home-stat-number">7</div>
+                            <div class="home-stat-label">Tipos de resíduos explicados</div>
+                        </div>
+                    </div>
+                    <div class="home-stat-card">
+                        <div class="home-stat-icon"><i data-lucide="globe"></i></div>
+                        <div>
+                            <div class="home-stat-number">5</div>
+                            <div class="home-stat-label">Impactos ambientais detalhados</div>
+                        </div>
+                    </div>
+                    <div class="home-stat-card">
+                        <div class="home-stat-icon"><i data-lucide="sprout"></i></div>
+                        <div>
+                            <div class="home-stat-number">100%</div>
+                            <div class="home-stat-label">Conteúdo gratuito e acessível</div>
+                        </div>
+                    </div>
+                    <div class="home-stat-card">
+                        <div class="home-stat-icon"><i data-lucide="lightbulb"></i></div>
+                        <div>
+                            <div class="home-stat-number">+10</div>
+                            <div class="home-stat-label">Dados curiosos para refletir</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-topic">Sobre o projeto</h2>
+                <p class="section-desc">
+                    O Mundo Sustentável é um projeto desenvolvido com o objetivo de conscientizar a população sobre a separação correta dos resíduos, reciclagem, compostagem e os impactos ambientais causados pelo descarte inadequado do lixo, ele busca resolver problemas como a falta de informação e mostra como realmente é o mundo.
+                </p>
+
+                <p class="section-desc">
+                    O projeto Mundo Sustentável foi desenvolvido por um aluno do curso técnico em Desenvolvimento de Sistemas como parte do Trabalho de Conclusão de Curso (TCC). A iniciativa surgiu da necessidade de promover a conscientização ambiental por meio da tecnologia, oferecendo informações sobre reciclagem, compostagem, descarte correto de resíduos e preservação do meio ambiente.
+                </p>
+
+                <h2 class="section-topic">Objetivo do projeto</h2>
+                <div class="icon-list-grid">
+                    <div class="icon-list-card">
+                        <i data-lucide="graduation-cap"></i>
+                        <p>Promover educação ambiental para todas as idades</p>
+                    </div>
+                    <div class="icon-list-card">
+                        <i data-lucide="recycle"></i>
+                        <p>Incentivar a reciclagem e a separação correta do lixo</p>
+                    </div>
+                    <div class="icon-list-card">
+                        <i data-lucide="map-pin"></i>
+                        <p>Explicar o destino correto de cada tipo de resíduo</p>
+                    </div>
+                    <div class="icon-list-card">
+                        <i data-lucide="leaf"></i>
+                        <p>Conscientizar sobre a preservação do meio ambiente</p>
+                    </div>
+                </div>
+
+                <h2 class="section-topic">Explore os tópicos</h2>
+                <p class="section-desc" style="margin-bottom: 24px;">
+                    Clique em um dos cartões abaixo para navegar diretamente até o conteúdo.
+                </p>
+                <div class="explorar-grid">
+                    <div class="explorar-card" style="--explorar-cor: #ef4444;" onclick="trocarAba('residuos')">
+                        <div class="explorar-icon" style="background: rgba(239,68,68,0.12); color: #ef4444;"><i data-lucide="trash-2"></i></div>
+                        <h3 class="explorar-titulo">Tipos de resíduos</h3>
+                        <p class="explorar-desc">Vidro, papel, metal, plástico, orgânico, eletrônico e mais — saiba onde descartar cada um.</p>
+                        <span class="explorar-link">Ver conteúdo <i data-lucide="arrow-right"></i></span>
+                    </div>
+                    <div class="explorar-card" style="--explorar-cor: #3b82f6;" onclick="trocarAba('impactos')">
+                        <div class="explorar-icon" style="background: rgba(59,130,246,0.12); color: #3b82f6;"><i data-lucide="cloud-rain"></i></div>
+                        <h3 class="explorar-titulo">Impactos ambientais</h3>
+                        <p class="explorar-desc">Poluição do ar, da água, do solo e a saúde pública: entenda causa e consequência.</p>
+                        <span class="explorar-link">Ver conteúdo <i data-lucide="arrow-right"></i></span>
+                    </div>
+                    <div class="explorar-card" style="--explorar-cor: #a16207;" onclick="trocarAba('composto')">
+                        <div class="explorar-icon" style="background: rgba(161,98,7,0.12); color: #a16207;"><i data-lucide="sprout"></i></div>
+                        <h3 class="explorar-titulo">Compostagem e Chorume</h3>
+                        <p class="explorar-desc">Como transformar lixo orgânico em adubo e entenda os riscos do chorume.</p>
+                        <span class="explorar-link">Ver conteúdo <i data-lucide="arrow-right"></i></span>
+                    </div>
+                    <div class="explorar-card" style="--explorar-cor: #4bbe15;" onclick="trocarAba('dados')">
+                        <div class="explorar-icon" style="background: rgba(75,190,21,0.12); color: #4bbe15;"><i data-lucide="lightbulb"></i></div>
+                        <h3 class="explorar-titulo">Dados interessantes</h3>
+                        <p class="explorar-desc">Números e curiosidades sobre reciclagem e o tempo de decomposição do lixo.</p>
+                        <span class="explorar-link">Ver conteúdo <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <h2 class="section-topic">Contato</h2>
+                <div class="contato-card">
+                    <div>
+                        <p class="section-desc" style="margin-bottom: 4px;">João Victor</p>
+                        <p class="contato-sub">Desenvolvedor do projeto Mundo Sustentável</p>
+                    </div>
+                    <a href="https://wa.me/15996424970" class="btnc" target="_blank"><i data-lucide="message-circle"></i> Quero entrar em contato</a>
+                </div>
+            </div>
+
+            <!-- ABA: Tipos de resíduos -->
+            <div id="aba-residuos" class="aba-conteudo">
+            <h2 class="section-title">Tipos de Resíduos</h2>
+            <p class="section-desc" style="margin-bottom: 32px;">
+                Para facilitar a separação correta, cada tipo de material possui uma cor e categoria específica.
+Conheça as principais categorias e saiba o que descartar em cada uma delas.
+            </p>
+ 
+            <div class="residuos-grid">
+ 
+                <div class="residuo-card" style="--residuo-cor: #4bbe15;">
+                    <div class="residuo-icon-wrap" style="background: rgba(75,190,21,0.12); border-color: #4bbe15;">
+                        <span class="residuo-emoji">🟢</span>
+                    </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #4bbe15;">Vidro</h3>
+                    <p class="residuo-desc">Garrafas, potes, copos e frascos de vidro. Deve ser descartado inteiro quando possível para evitar acidentes.</p>
+                    <ul class="residuo-lista">
+                        <li>Garrafas e potes</li>
+                        <li>Frascos de perfume</li>
+                        <li>Vidros de conserva</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(75,190,21,0.15); color: #4bbe15; border-color: #4bbe15;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #3b82f6;">
+                <div class="residuo-icon-wrap" style="background: rgba(59,130,246,0.12); border-color: #3b82f6;">
+                    <span class="residuo-emoji">🔵</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #3b82f6;">Papel</h3>
+                    <p class="residuo-desc">Jornais, revistas, caixas, papelão e folhas. Devem estar secos e limpos para serem reciclados corretamente.</p>
+                    <ul class="residuo-lista">
+                        <li>Jornais e revistas</li>
+                        <li>Caixas e papelão</li>
+                        <li>Folhas e cadernos</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(59,130,246,0.15); color: #3b82f6; border-color: #3b82f6;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #f59e0b;">
+                <div class="residuo-icon-wrap" style="background: rgba(245,158,11,0.12); border-color: #f59e0b;">
+                    <span class="residuo-emoji">🟡</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #f59e0b;">Metal</h3>
+                    <p class="residuo-desc">Latas de alumínio, aço, tampas e embalagens metálicas. Um dos materiais mais valiosos para a reciclagem.</p>
+                    <ul class="residuo-lista">
+                        <li>Latas de alumínio</li>
+                        <li>Latas de aço</li>
+                        <li>Tampas e pregos</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(245,158,11,0.15); color: #f59e0b; border-color: #f59e0b;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #ef4444;">
+                <div class="residuo-icon-wrap" style="background: rgba(239,68,68,0.12); border-color: #ef4444;">
+                    <span class="residuo-emoji">🔴</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #ef4444;">Plástico</h3>
+                    <p class="residuo-desc">Embalagens, garrafas PET, sacolas e utensílios plásticos. Verifique o símbolo de reciclagem na embalagem.</p>
+                    <ul class="residuo-lista">
+                        <li>Garrafas PET</li>
+                        <li>Embalagens de alimentos</li>
+                        <li>Sacolas plásticas</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(239,68,68,0.15); color: #ef4444; border-color: #ef4444;">♻️ Reciclável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #8b5cf6;">
+                <div class="residuo-icon-wrap" style="background: rgba(139,92,246,0.12); border-color: #8b5cf6;">
+                    <span class="residuo-emoji">☠️</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #8b5cf6;">Resíduo Perigoso</h3>
+                    <p class="residuo-desc">Pilhas, baterias, medicamentos, tintas e produtos químicos. Nunca descarte no lixo comum — procure pontos de coleta especiais.</p>
+                    <ul class="residuo-lista">
+                        <li>Pilhas e baterias</li>
+                        <li>Medicamentos vencidos</li>
+                        <li>Tintas e solventes</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(139,92,246,0.15); color: #8b5cf6; border-color: #8b5cf6;">⚠️ Descarte especial</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #a16207;">
+                <div class="residuo-icon-wrap" style="background: rgba(161,98,7,0.12); border-color: #a16207;">
+                    <span class="residuo-emoji">🍂</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #a16207;">Orgânico</h3>
+                    <p class="residuo-desc">Restos de comida, cascas de frutas e legumes, borra de café e resíduos de jardim. Podem ser transformados em adubo por compostagem.</p>
+                    <ul class="residuo-lista">
+                        <li>Cascas e restos de frutas</li>
+                        <li>Borra de café e chá</li>
+                        <li>Resíduos de jardim</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(161,98,7,0.15); color: #a16207; border-color: #a16207;">🌱 Compostável</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #64748b;">
+                <div class="residuo-icon-wrap" style="background: rgba(100,116,139,0.12); border-color: #64748b;">
+                    <span class="residuo-emoji">🗑️</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #64748b;">Rejeito</h3>
+                    <p class="residuo-desc">Materiais que não podem ser reciclados nem compostados, como papel sujo, fraldas e isopor. Devem ir para o lixo comum.</p>
+                    <ul class="residuo-lista">
+                        <li>Papel higiênico usado</li>
+                        <li>Fraldas descartáveis</li>
+                        <li>Isopor e espumas</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(100,116,139,0.15); color: #64748b; border-color: #64748b;">🗑️ Lixo comum</span>
+                </div>
+            </div>
+ 
+            <div class="residuo-card" style="--residuo-cor: #06b6d4;">
+                <div class="residuo-icon-wrap" style="background: rgba(6,182,212,0.12); border-color: #06b6d4;">
+                    <span class="residuo-emoji">💻</span>
+                </div>
+                <div class="residuo-corpo">
+                    <h3 class="residuo-titulo" style="color: #06b6d4;">Eletrônico (e-lixo)</h3>
+                    <p class="residuo-desc">Celulares, computadores, eletrodomésticos e cabos. Contêm metais pesados e devem ser entregues em pontos de coleta específicos.</p>
+                    <ul class="residuo-lista">
+                        <li>Celulares e computadores</li>
+                        <li>Cabos e carregadores</li>
+                        <li>Eletrodomésticos</li>
+                    </ul>
+                    <span class="residuo-badge" style="background: rgba(6,182,212,0.15); color: #06b6d4; border-color: #06b6d4;">♻️ Ponto de coleta</span>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+ 
+
+            <!-- ABA: Sobre o criador -->
+            <div id="aba-criador" class="aba-conteudo">
+                <h2 class="section-title">Sobre o criador</h2>
+                <div class="criador-card">
+                    <div class="criador-avatar"><img src="img/criador.jpeg"></div>
+                    <div class="criador-info">
+                        <h3>João Victor Nunes Bagatim</h3>
+                        <p class="criador-subtitulo">Desenvolvedor Front-end · TCC 2026</p>
+                        <p class="criador-desc">
+                            Este projeto foi desenvolvido como Trabalho de Conclusão de Curso com o objetivo de conscientizar sobre sustentabilidade, descarte correto de lixo e preservação ambiental. O site reúne informações sobre reciclagem, terra orgânica, chorume e muito mais.
+                        </p>
+                        <div class="criador-links">
+                            <a href="https://github.com/JoaoVictorNBa" target="_blank" class="btn btn-secondary">
+                                <i data-lucide="github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/joao-victor-bagatim" target="_blank" class="btn btn-secondary">
+                                <i data-lucide="linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/bagatimjoao" target="_blank" class="btn btn-secondary">
+                                <i data-lucide="instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABA: Impactos ambientais -->
+            <div id="aba-impactos" class="aba-conteudo">
+                <h2 class="section-title">Impactos Ambientais</h2>
+                <p class="section-desc" style="margin-bottom: 32px;">
+                    O descarte incorreto do lixo não afeta só a paisagem — ele gera uma cadeia de efeitos que atinge o ar, a água, o solo e a saúde de todos nós. Conheça os principais impactos e entenda a causa e a consequência de cada um.
+                </p>
+
+                <div class="impactos-grid">
+
+                    <div class="impacto-card" style="--impacto-cor: #ef4444;">
+                        <div class="impacto-img-wrap">
+                            <img src="img/fumaca-queima.webp" alt="Fumaça de queima de lixo poluindo o ar" class="impacto-img">
+                            <span class="impacto-tag" style="background: #ef4444;">🔥 Poluição do ar</span>
+                        </div>
+                        <div class="impacto-corpo">
+                            <h3 class="impacto-titulo" style="color: #ef4444;">Poluição do Ar</h3>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #ef4444;"><i data-lucide="flame"></i> Causa</span>
+                                <p>Queima de lixo a céu aberto e emissão de gases por lixões e indústrias sem tratamento adequado.</p>
+                            </div>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #ef4444;"><i data-lucide="alert-triangle"></i> Consequência</span>
+                                <p>Liberação de gases tóxicos e material particulado, agravando doenças respiratórias e contribuindo para o aquecimento global.</p>
+                            </div>
+                            <p class="impacto-explicacao">Quando o lixo é queimado de forma irregular, substâncias como dioxinas e monóxido de carbono são lançadas na atmosfera. Isso piora a qualidade do ar, especialmente em áreas urbanas densamente povoadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="impacto-card" style="--impacto-cor: #3b82f6;">
+                        <div class="impacto-img-wrap">
+                            <img src="img/rio-lixo.webp" alt="Rio poluído com lixo e resíduos" class="impacto-img">
+                            <span class="impacto-tag" style="background: #3b82f6;">💧 Poluição da água</span>
+                        </div>
+                        <div class="impacto-corpo">
+                            <h3 class="impacto-titulo" style="color: #3b82f6;">Poluição da Água</h3>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #3b82f6;"><i data-lucide="flame"></i> Causa</span>
+                                <p>Descarte de lixo em rios, mares e bueiros, além de chorume de lixões que se infiltra em cursos d'água.</p>
+                            </div>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #3b82f6;"><i data-lucide="alert-triangle"></i> Consequência</span>
+                                <p>Contaminação de rios, lençóis freáticos e oceanos, causando morte de espécies aquáticas e doenças em quem consome a água.</p>
+                            </div>
+                            <p class="impacto-explicacao">O chorume, líquido escuro gerado pela decomposição do lixo, é altamente tóxico. Quando atinge a água, reduz o oxigênio disponível e prejudica toda a cadeia alimentar aquática.</p>
+                        </div>
+                    </div>
+
+                    <div class="impacto-card" style="--impacto-cor: #a16207;">
+                        <div class="impacto-img-wrap">
+                            <img src="img/lixo-a-ceu-aberto.webp" alt="Solo contaminado por resíduos e lixão a céu aberto" class="impacto-img">
+                            <span class="impacto-tag" style="background: #a16207;">🌍 Contaminação do solo</span>
+                        </div>
+                        <div class="impacto-corpo">
+                            <h3 class="impacto-titulo" style="color: #a16207;">Contaminação do Solo</h3>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #a16207;"><i data-lucide="flame"></i> Causa</span>
+                                <p>Acúmulo de resíduos em lixões irregulares e descarte de materiais tóxicos diretamente no solo.</p>
+                            </div>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #a16207;"><i data-lucide="alert-triangle"></i> Consequência</span>
+                                <p>Perda de fertilidade da terra, contaminação de plantações e infiltração de substâncias tóxicas no lençol freático.</p>
+                            </div>
+                            <p class="impacto-explicacao">Metais pesados e produtos químicos presentes no lixo podem levar décadas para se decompor, tornando áreas inteiras impróprias para agricultura ou moradia.</p>
+                        </div>
+                    </div>
+
+                    <div class="impacto-card" style="--impacto-cor: #f59e0b;">
+                        <div class="impacto-img-wrap">
+                            <img src="img/aquecimento.png" alt="Efeito estufa e aquecimento global" class="impacto-img">
+                            <span class="impacto-tag" style="background: #f59e0b;">🌡️ Aquecimento global</span>
+                        </div>
+                        <div class="impacto-corpo">
+                            <h3 class="impacto-titulo" style="color: #f59e0b;">Efeito Estufa e Aquecimento Global</h3>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #f59e0b;"><i data-lucide="flame"></i> Causa</span>
+                                <p>Decomposição de resíduos orgânicos em lixões, que libera gás metano, e queima de lixo, que libera CO₂.</p>
+                            </div>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #f59e0b;"><i data-lucide="alert-triangle"></i> Consequência</span>
+                                <p>Aumento da temperatura média do planeta, derretimento de geleiras e eventos climáticos mais extremos.</p>
+                            </div>
+                            <p class="impacto-explicacao">O metano é um gás de efeito estufa muito mais potente que o CO₂. Lixões a céu aberto são uma das principais fontes desse gás em áreas urbanas.</p>
+                        </div>
+                    </div>
+
+                    <div class="impacto-card" style="--impacto-cor: #22c55e;">
+                        <div class="impacto-img-wrap">
+                            <img src="img/animal-afetado.webp" alt="Animal afetado por lixo no habitat natural" class="impacto-img">
+                            <span class="impacto-tag" style="background: #22c55e;">🐾 Perda de biodiversidade</span>
+                        </div>
+                        <div class="impacto-corpo">
+                            <h3 class="impacto-titulo" style="color: #22c55e;">Perda de Biodiversidade</h3>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #22c55e;"><i data-lucide="flame"></i> Causa</span>
+                                <p>Destruição de habitats naturais para instalação de lixões e ingestão ou aprisionamento de animais em resíduos, como plásticos.</p>
+                            </div>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #22c55e;"><i data-lucide="alert-triangle"></i> Consequência</span>
+                                <p>Redução de populações de animais e plantas, desequilíbrio ecológico e, em casos extremos, extinção de espécies.</p>
+                            </div>
+                            <p class="impacto-explicacao">Animais marinhos e terrestres frequentemente confundem plástico com alimento ou ficam presos em resíduos, o que compromete espécies inteiras ao longo do tempo.</p>
+                        </div>
+                    </div>
+
+                    <div class="impacto-card" style="--impacto-cor: #8b5cf6;">
+                        <div class="impacto-img-wrap">
+                            <img src="img/acumulo-de-lixo-residencia.webp" alt="Acúmulo de lixo urbano próximo a residências" class="impacto-img">
+                            <span class="impacto-tag" style="background: #8b5cf6;">🩺 Saúde pública</span>
+                        </div>
+                        <div class="impacto-corpo">
+                            <h3 class="impacto-titulo" style="color: #8b5cf6;">Doenças e Saúde Pública</h3>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #8b5cf6;"><i data-lucide="flame"></i> Causa</span>
+                                <p>Acúmulo de lixo em áreas urbanas, favorecendo a proliferação de ratos, baratas e mosquitos.</p>
+                            </div>
+                            <div class="impacto-linha">
+                                <span class="impacto-label" style="color: #8b5cf6;"><i data-lucide="alert-triangle"></i> Consequência</span>
+                                <p>Aumento de casos de doenças como dengue, leptospirose e cólera, além de contaminação de alimentos e água.</p>
+                            </div>
+                            <p class="impacto-explicacao">Locais com lixo acumulado se tornam ambientes propícios para vetores de doenças, colocando em risco comunidades inteiras, especialmente em regiões com saneamento precário.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ABA: Compostagem e Chorume -->
+            <div id="aba-composto" class="aba-conteudo">
+                <h2 class="section-title">Compostagem e Chorume</h2>
+                <p class="section-desc" style="margin-bottom: 32px;">
+                    Boa parte do lixo doméstico é orgânica e pode virar adubo em vez de virar problema. Entenda como fazer compostagem em casa e por que o chorume, líquido gerado pela decomposição do lixo, é um dos maiores riscos ambientais dos lixões.
+                </p>
+
+                <h3 class="subsection-title"><i data-lucide="sprout"></i> O que é compostagem?</h3>
+                <p class="section-desc" style="margin-bottom: 32px;">
+                    Compostagem é o processo natural de decomposição de resíduos orgânicos — como cascas de frutas, restos de comida e folhas secas — transformando-os em um adubo rico em nutrientes. Fazer compostagem em casa reduz a quantidade de lixo enviada a aterros e ainda produz terra fértil para plantas e hortas.
+                </p>
+
+                <h3 class="subsection-title"><i data-lucide="check-circle-2"></i> O que pode compostar</h3>
+                <div class="residuos-grid" style="margin-bottom: 40px;">
+                    <div class="residuo-card" style="--residuo-cor: #4bbe15;">
+                        <div class="residuo-icon-wrap" style="background: rgba(75,190,21,0.12); border-color: #4bbe15;">
+                            <span class="residuo-emoji">🍌</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #4bbe15;">Cascas e restos de frutas/legumes</h3>
+                            <p class="residuo-desc">Ricos em umidade e nutrientes, são a base de uma boa composteira.</p>
+                            <span class="residuo-badge" style="background: rgba(75,190,21,0.15); color: #4bbe15; border-color: #4bbe15;">🌱 Material "verde"</span>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #4bbe15;">
+                        <div class="residuo-icon-wrap" style="background: rgba(75,190,21,0.12); border-color: #4bbe15;">
+                            <span class="residuo-emoji">☕</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #4bbe15;">Borra de café e saquinhos de chá</h3>
+                            <p class="residuo-desc">Acidificam levemente o composto e aceleram a decomposição.</p>
+                            <span class="residuo-badge" style="background: rgba(75,190,21,0.15); color: #4bbe15; border-color: #4bbe15;">🌱 Material "verde"</span>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #a16207;">
+                        <div class="residuo-icon-wrap" style="background: rgba(161,98,7,0.12); border-color: #a16207;">
+                            <span class="residuo-emoji">🍂</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #a16207;">Folhas secas e galhos pequenos</h3>
+                            <p class="residuo-desc">Fornecem carbono e ajudam a arejar a mistura, evitando mau cheiro.</p>
+                            <span class="residuo-badge" style="background: rgba(161,98,7,0.15); color: #a16207; border-color: #a16207;">🍁 Material "marrom"</span>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #a16207;">
+                        <div class="residuo-icon-wrap" style="background: rgba(161,98,7,0.12); border-color: #a16207;">
+                            <span class="residuo-emoji">📄</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #a16207;">Papel e papelão sem tinta</h3>
+                            <p class="residuo-desc">Picados em pedaços pequenos, equilibram o excesso de umidade.</p>
+                            <span class="residuo-badge" style="background: rgba(161,98,7,0.15); color: #a16207; border-color: #a16207;">🍁 Material "marrom"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title"><i data-lucide="x-circle"></i> O que NÃO pode compostar</h3>
+                <div class="residuos-grid" style="margin-bottom: 40px;">
+                    <div class="residuo-card" style="--residuo-cor: #ef4444;">
+                        <div class="residuo-icon-wrap" style="background: rgba(239,68,68,0.12); border-color: #ef4444;">
+                            <span class="residuo-emoji">🍖</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #ef4444;">Carnes, ossos e laticínios</h3>
+                            <p class="residuo-desc">Atraem pragas e animais, além de gerar odor forte durante a decomposição.</p>
+                            <span class="residuo-badge" style="background: rgba(239,68,68,0.15); color: #ef4444; border-color: #ef4444;">🚫 Evitar</span>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #ef4444;">
+                        <div class="residuo-icon-wrap" style="background: rgba(239,68,68,0.12); border-color: #ef4444;">
+                            <span class="residuo-emoji">🛢️</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #ef4444;">Óleos e gorduras</h3>
+                            <p class="residuo-desc">Dificultam a aeração e retardam todo o processo de decomposição.</p>
+                            <span class="residuo-badge" style="background: rgba(239,68,68,0.15); color: #ef4444; border-color: #ef4444;">🚫 Evitar</span>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #ef4444;">
+                        <div class="residuo-icon-wrap" style="background: rgba(239,68,68,0.12); border-color: #ef4444;">
+                            <span class="residuo-emoji">🐾</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #ef4444;">Fezes de animais domésticos</h3>
+                            <p class="residuo-desc">Podem conter agentes patogênicos prejudiciais à saúde.</p>
+                            <span class="residuo-badge" style="background: rgba(239,68,68,0.15); color: #ef4444; border-color: #ef4444;">🚫 Evitar</span>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #ef4444;">
+                        <div class="residuo-icon-wrap" style="background: rgba(239,68,68,0.12); border-color: #ef4444;">
+                            <span class="residuo-emoji">🌿</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #ef4444;">Plantas doentes ou com pragas</h3>
+                            <p class="residuo-desc">Podem espalhar fungos e insetos para o restante do composto.</p>
+                            <span class="residuo-badge" style="background: rgba(239,68,68,0.15); color: #ef4444; border-color: #ef4444;">🚫 Evitar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title"><i data-lucide="list-checks"></i> Como montar sua composteira em casa</h3>
+                <div class="passo-grid" style="margin-bottom: 40px;">
+                    <div class="passo-card">
+                        <span class="passo-numero">1</span>
+                        <h4>Escolha o recipiente</h4>
+                        <p>Use um balde ou composteira com furos para drenagem e ventilação, e uma tampa para evitar insetos.</p>
+                    </div>
+                    <div class="passo-card">
+                        <span class="passo-numero">2</span>
+                        <h4>Alterne as camadas</h4>
+                        <p>Intercale materiais "verdes" (úmidos, ricos em nitrogênio) com "marrons" (secos, ricos em carbono).</p>
+                    </div>
+                    <div class="passo-card">
+                        <span class="passo-numero">3</span>
+                        <h4>Areje a mistura</h4>
+                        <p>Revolva o composto a cada 2 ou 3 dias para oxigenar e evitar mau cheiro.</p>
+                    </div>
+                    <div class="passo-card">
+                        <span class="passo-numero">4</span>
+                        <h4>Controle a umidade</h4>
+                        <p>A mistura deve ficar como uma esponja espremida: nem encharcada, nem seca.</p>
+                    </div>
+                    <div class="passo-card">
+                        <span class="passo-numero">5</span>
+                        <h4>Colha o adubo</h4>
+                        <p>Em 2 a 4 meses o composto fica pronto: escuro, soltinho e com cheiro de terra.</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title"><i data-lucide="droplets"></i> O que é chorume?</h3>
+                <p class="section-desc" style="margin-bottom: 32px;">
+                    Chorume é o líquido escuro e de odor forte gerado pela decomposição do lixo, principalmente em lixões e aterros sem tratamento adequado. Ele surge da combinação da água da chuva com os líquidos liberados pela matéria orgânica em decomposição, formando uma substância altamente tóxica e concentrada.
+                </p>
+
+                <h3 class="subsection-title"><i data-lucide="alert-triangle"></i> Riscos do chorume</h3>
+                <div class="residuos-grid" style="margin-bottom: 40px;">
+                    <div class="residuo-card" style="--residuo-cor: #3b82f6;">
+                        <div class="residuo-icon-wrap" style="background: rgba(59,130,246,0.12); border-color: #3b82f6;">
+                            <span class="residuo-emoji">💧</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #3b82f6;">Contaminação da água</h3>
+                            <p class="residuo-desc">Infiltra no solo e atinge lençóis freáticos, rios e nascentes próximas.</p>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #8b5cf6;">
+                        <div class="residuo-icon-wrap" style="background: rgba(139,92,246,0.12); border-color: #8b5cf6;">
+                            <span class="residuo-emoji">🩺</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #8b5cf6;">Risco à saúde</h3>
+                            <p class="residuo-desc">Pode contaminar fontes de água potável e favorecer a transmissão de doenças.</p>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #a16207;">
+                        <div class="residuo-icon-wrap" style="background: rgba(161,98,7,0.12); border-color: #a16207;">
+                            <span class="residuo-emoji">🌍</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #a16207;">Contaminação do solo</h3>
+                            <p class="residuo-desc">Inutiliza áreas para agricultura e moradia por longos períodos.</p>
+                        </div>
+                    </div>
+                    <div class="residuo-card" style="--residuo-cor: #ef4444;">
+                        <div class="residuo-icon-wrap" style="background: rgba(239,68,68,0.12); border-color: #ef4444;">
+                            <span class="residuo-emoji">⚗️</span>
+                        </div>
+                        <div class="residuo-corpo">
+                            <h3 class="residuo-titulo" style="color: #ef4444;">Alta toxicidade</h3>
+                            <p class="residuo-desc">Contém metais pesados e substâncias químicas em concentração elevada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title"><i data-lucide="shield-check"></i> Como reduzir o impacto do chorume</h3>
+                <div class="icon-list-grid">
+                    <div class="icon-list-card">
+                        <i data-lucide="sprout"></i>
+                        <p>Separe o lixo orgânico e faça compostagem em casa sempre que possível</p>
+                    </div>
+                    <div class="icon-list-card">
+                        <i data-lucide="ban"></i>
+                        <p>Evite descartar lixo em terrenos baldios ou lixões irregulares</p>
+                    </div>
+                    <div class="icon-list-card">
+                        <i data-lucide="users"></i>
+                        <p>Apoie e participe da coleta seletiva no seu bairro</p>
+                    </div>
+                    <div class="icon-list-card">
+                        <i data-lucide="umbrella"></i>
+                        <p>Cubra composteiras e resíduos orgânicos para controlar o excesso de umidade</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABA: Dados interessantes -->
+            <div id="aba-dados" class="aba-conteudo">
+                <h2 class="section-title">Dados Interessantes</h2>
+                <p class="section-desc" style="margin-bottom: 32px;">
+                    Números ajudam a entender o tamanho real do problema do lixo — e o impacto positivo de pequenas atitudes. Confira alguns dados de referência usados em educação ambiental.
+                </p>
+
+                <div class="dados-grid">
+                    <div class="dado-card" style="--dado-cor: #ef4444;">
+                        <i data-lucide="wine" class="dado-icon"></i>
+                        <span class="dado-numero">400 anos</span>
+                        <p class="dado-texto">é o tempo aproximado que uma garrafa PET leva para se decompor na natureza.</p>
+                    </div>
+                    <div class="dado-card" style="--dado-cor: #f59e0b;">
+                        <i data-lucide="beer" class="dado-icon"></i>
+                        <span class="dado-numero">~200 anos</span>
+                        <p class="dado-texto">é o tempo estimado para uma lata de alumínio se decompor se descartada incorretamente.</p>
+                    </div>
+                    <div class="dado-card" style="--dado-cor: #4bbe15;">
+                        <i data-lucide="infinity" class="dado-icon"></i>
+                        <span class="dado-numero">100%</span>
+                        <p class="dado-texto">do vidro pode ser reciclado, e ele pode passar por esse processo infinitas vezes sem perder qualidade.</p>
+                    </div>
+                    <div class="dado-card" style="--dado-cor: #8b5cf6;">
+                        <i data-lucide="battery-warning" class="dado-icon"></i>
+                        <span class="dado-numero">20.000 L</span>
+                        <p class="dado-texto">de água podem ser contaminados por apenas uma pilha descartada de forma incorreta.</p>
+                    </div>
+                    <div class="dado-card" style="--dado-cor: #3b82f6;">
+                        <i data-lucide="droplets" class="dado-icon"></i>
+                        <span class="dado-numero">~70%</span>
+                        <p class="dado-texto">menos água é usada na produção de papel reciclado em comparação ao papel de fibra virgem.</p>
+                    </div>
+                    <div class="dado-card" style="--dado-cor: #a16207;">
+                        <i data-lucide="recycle" class="dado-icon"></i>
+                        <span class="dado-numero">&lt; 4%</span>
+                        <p class="dado-texto">do lixo reciclável produzido no Brasil é, de fato, reciclado — segundo estimativas de referência do setor.</p>
+                    </div>
+                    <div class="dado-card" style="--dado-cor: #06b6d4;">
+                        <i data-lucide="smartphone" class="dado-icon"></i>
+                        <span class="dado-numero">1kg</span>
+                        <p class="dado-texto">de celulares antigos pode conter mais ouro que 1 tonelada de minério extraído de uma mina.</p>
+                    </div>
+                    <div class="dado-card" style="--dado-cor: #22c55e;">
+                        <i data-lucide="trees" class="dado-icon"></i>
+                        <span class="dado-numero">1 tonelada</span>
+                        <p class="dado-texto">de papel reciclado pode evitar o corte de cerca de 20 árvores.</p>
+                    </div>
+                </div>
+                <p class="dados-nota">* Valores aproximados, usados como referência em materiais de educação ambiental.</p>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">
+                <i data-lucide=🌎></i>
+                <span>Mundo saudável</span>
+            </a>
+            <div class="footer-links">
+                <a href="https://github.com/JoaoVictorNBa" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/joao-victor-bagatim" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/bagatimjoao" target="_blank">Instagram</a>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Mundo saudável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
